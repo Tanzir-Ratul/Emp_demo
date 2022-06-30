@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="salary_range">Salary Range:</string>
+    <string name="last_date">Last date :</string>
+    <string name="is_featured">Featured :</string>
+    <string name="deadline">Deadline :</string>
+</resources>
