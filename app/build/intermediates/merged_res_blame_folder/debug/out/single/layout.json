@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-35:/layout/fragment_item_show.xml",
+        "source": "com.example.myapplication.app-main-38:/layout/fragment_item_show.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-35:/layout/employer_item_row.xml",
+        "source": "com.example.myapplication.app-main-38:/layout/employer_item_row.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-35:/layout/fragment_home.xml",
+        "source": "com.example.myapplication.app-main-38:/layout/fragment_home.xml"
+    }
+]
