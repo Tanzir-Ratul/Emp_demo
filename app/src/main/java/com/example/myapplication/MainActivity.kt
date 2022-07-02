@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity(), CommunicatorInterface {
             putString("maxsalary", item.maxSalary)
             putBoolean("isFeature", item.isFeatured)
             putString("logo", item.logo)
+            putString("profile", item.recruitingCompanysProfile)
         }
         val transection = this.supportFragmentManager.beginTransaction()
         val itemShowFragment = ItemShowFragment()

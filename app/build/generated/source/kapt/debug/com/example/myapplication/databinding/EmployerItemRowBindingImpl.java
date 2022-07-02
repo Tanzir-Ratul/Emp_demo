@@ -14,7 +14,7 @@ public class EmployerItemRowBindingImpl extends EmployerItemRowBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.flagIV, 4);
+        sViewsWithIds.put(R.id.flagIV, 5);
     }
     // views
     @NonNull
@@ -25,17 +25,19 @@ public class EmployerItemRowBindingImpl extends EmployerItemRowBinding  {
     private final android.widget.ImageView mboundView2;
     @NonNull
     private final android.widget.TextView mboundView3;
+    @NonNull
+    private final android.widget.TextView mboundView4;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public EmployerItemRowBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 5, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds));
     }
     private EmployerItemRowBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.ImageView) bindings[4]
+            , (android.widget.ImageView) bindings[5]
             );
         this.mboundView0 = (androidx.cardview.widget.CardView) bindings[0];
         this.mboundView0.setTag(null);
@@ -45,6 +47,8 @@ public class EmployerItemRowBindingImpl extends EmployerItemRowBinding  {
         this.mboundView2.setTag(null);
         this.mboundView3 = (android.widget.TextView) bindings[3];
         this.mboundView3.setTag(null);
+        this.mboundView4 = (android.widget.TextView) bindings[4];
+        this.mboundView4.setTag(null);
         setRootTag(root);
         // listeners
         invalidateAll();
@@ -104,8 +108,10 @@ public class EmployerItemRowBindingImpl extends EmployerItemRowBinding  {
             mDirtyFlags = 0;
         }
         java.lang.String itemDeadline = null;
+        java.lang.String itemRecruitingCompanysProfile = null;
         com.example.myapplication.models.Employer.Data item = mItem;
         java.lang.String itemLogo = null;
+        java.lang.String javaLangStringEmployersProfileItemRecruitingCompanysProfile = null;
 
         if ((dirtyFlags & 0x3L) != 0) {
 
@@ -114,9 +120,15 @@ public class EmployerItemRowBindingImpl extends EmployerItemRowBinding  {
                 if (item != null) {
                     // read item.deadline
                     itemDeadline = item.getDeadline();
+                    // read item.recruitingCompanysProfile
+                    itemRecruitingCompanysProfile = item.getRecruitingCompanysProfile();
                     // read item.logo
                     itemLogo = item.getLogo();
                 }
+
+
+                // read ("Employers profile:") + (item.recruitingCompanysProfile)
+                javaLangStringEmployersProfileItemRecruitingCompanysProfile = ("Employers profile:") + (itemRecruitingCompanysProfile);
         }
         // batch finished
         if ((dirtyFlags & 0x3L) != 0) {
@@ -125,6 +137,7 @@ public class EmployerItemRowBindingImpl extends EmployerItemRowBinding  {
             com.example.myapplication.adapters.CustomBindingAdapterKt.setDateTime(this.mboundView1, itemDeadline);
             com.example.myapplication.adapters.CustomBindingAdapterKt.setIcon(this.mboundView2, itemLogo);
             com.example.myapplication.adapters.CustomBindingAdapterKt.setSalary(this.mboundView3, item);
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView4, javaLangStringEmployersProfileItemRecruitingCompanysProfile);
         }
     }
     // Listener Stub Implementations

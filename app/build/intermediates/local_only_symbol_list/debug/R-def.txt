@@ -11,6 +11,7 @@ color white
 drawable ic_baseline_attach_money_24
 drawable ic_baseline_date_range_24
 drawable ic_baseline_flag_24
+drawable ic_baseline_person_pin_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 id empRV
@@ -23,9 +24,11 @@ id itemShowFragment
 id lastDateTV
 id linearLayoutCompat
 id nav_graph
+id profileTV
 id salaryRangeTV
 id textView
 id textView2
+id textView3
 id textView4
 layout activity_main
 layout employer_item_row
@@ -35,6 +38,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
 string app_name
+string company_profile
 string deadline
 string hello_blank_fragment
 string is_featured

@@ -33,9 +33,10 @@ class ItemShowFragment : Fragment(){
         binding.isFeaturedTV.text = arguments?.getBoolean("isFeature").toString()
         binding.lastDateTV.text = arguments?.getString("deadlineDate")
         binding.salaryRangeTV.text= setSalary(minSalary.toString(),maxsalary.toString())
+        binding.profileTV.text= arguments?.getString("profile")
 
 
-        val callback = object : OnBackPressedCallback(true){
+         object : OnBackPressedCallback(true){
             override fun handleOnBackPressed() {
 
                 val transection = requireActivity().supportFragmentManager.beginTransaction()

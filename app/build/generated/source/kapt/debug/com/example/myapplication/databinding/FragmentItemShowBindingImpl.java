@@ -21,6 +21,8 @@ public class FragmentItemShowBindingImpl extends FragmentItemShowBinding  {
         sViewsWithIds.put(R.id.textView4, 5);
         sViewsWithIds.put(R.id.isFeaturedTV, 6);
         sViewsWithIds.put(R.id.lastDateTV, 7);
+        sViewsWithIds.put(R.id.textView3, 8);
+        sViewsWithIds.put(R.id.profileTV, 9);
     }
     // views
     // variables
@@ -29,7 +31,7 @@ public class FragmentItemShowBindingImpl extends FragmentItemShowBinding  {
     // Inverse Binding Event Handlers
 
     public FragmentItemShowBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 8, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 10, sIncludes, sViewsWithIds));
     }
     private FragmentItemShowBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
@@ -37,9 +39,11 @@ public class FragmentItemShowBindingImpl extends FragmentItemShowBinding  {
             , (android.widget.TextView) bindings[6]
             , (android.widget.TextView) bindings[7]
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[0]
+            , (android.widget.TextView) bindings[9]
             , (android.widget.TextView) bindings[3]
             , (android.widget.TextView) bindings[1]
             , (android.widget.TextView) bindings[2]
+            , (android.widget.TextView) bindings[8]
             , (android.widget.TextView) bindings[5]
             );
         this.linearLayoutCompat.setTag(null);

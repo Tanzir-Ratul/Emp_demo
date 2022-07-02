@@ -1751,6 +1751,7 @@ drawable design_snackbar_background
 drawable ic_baseline_attach_money_24
 drawable ic_baseline_date_range_24
 drawable ic_baseline_flag_24
+drawable ic_baseline_person_pin_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2108,6 +2109,7 @@ id percent
 id pin
 id position
 id postLayout
+id profileTV
 id progress_circular
 id progress_horizontal
 id radio
@@ -2206,6 +2208,7 @@ id textStart
 id textTop
 id textView
 id textView2
+id textView3
 id textView4
 id textWatcher
 id text_input_end_icon
@@ -2447,6 +2450,7 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string company_profile
 string deadline
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
